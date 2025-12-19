@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turronstore - Alimentos premium para tu mascota">
+    <title>Turronstore | Alimentos Premium</title>
+    <link rel="stylesheet" href="asset/CSS/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- Mobile Header / Top Bar -->
+        <header class="top-bar">
+            <!-- Logo (Visible on Mobile) -->
+            <a href="#" class="logo-mobile">Turron<span>store</span></a>
+
+            <!-- Search Bar (Center on Desktop, Bottom on Mobile) -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar productos...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Actions (Menu Toggle + Cart) -->
+            <div class="top-bar-actions">
+                <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Vertical Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="logo">Turron<span>store</span></a>
+                <button id="menu-close" class="menu-close"><i class="fas fa-times"></i></button>
+            </div>
+
+            <nav class="vertical-nav">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active"><i class="fas fa-home"></i> INICIO</a></li>
+                    <li><a href="#products" class="nav-link"><i class="fas fa-book-open"></i> CATALOGO</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-tag"></i> OFERTAS</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-envelope"></i> CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>&copy; 2025 Turronstore</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <img src="asset/imagen/hero_turronstore_dog.png" alt="Happy Dog Background"
+                        onerror="this.style.display='none'">
+                </div>
+                <div class="hero-content">
+                    <span class="hero-tag">Nutrición Premium</span>
+                    <h1 class="hero-title">Lo mejor para tu mejor amigo.</h1>
+                    <p class="hero-subtitle">Alimentos balanceados, naturales y deliciosos.</p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#products" class="btn btn-primary">Ver Catálogo</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Grid Section -->
+            <section class="products container" id="products">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">Favoritos de la Manada</h2>
+                        <p style="color: var(--color-text-muted);">Nutrición seleccionada.</p>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image"><span style="font-size: 3rem;">🥩</span></div>
+                        <div class="product-info">
+                            <div class="product-category">Adulto</div>
+                            <h3 class="product-title">Premium Beef Mix</h3>
+                            <div class="product-price">$45.00</div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image"><span style="font-size: 3rem;">🐟</span></div>
+                        <div class="product-info">
+                            <div class="product-category">Sensible</div>
+                            <h3 class="product-title">Salmon & Rice</h3>
+                            <div class="product-price">$52.00</div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image"><span style="font-size: 3rem;">🦴</span></div>
+                        <div class="product-info">
+                            <div class="product-category">Snacks</div>
+                            <h3 class="product-title">Dental Chews</h3>
+                            <div class="product-price">$15.00</div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image"><span style="font-size: 3rem;">🍗</span></div>
+                        <div class="product-info">
+                            <div class="product-category">Cachorro</div>
+                            <h3 class="product-title">Puppy Starter</h3>
+                            <div class="product-price">$38.00</div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Product Counter (Mobile Only) -->
+            <div class="product-counter-container">
+                <span id="product-counter">1 / 4</span>
+            </div>
+
+            <div class="view-more-container">
+                <button class="btn btn-outline-primary btn-view-more">Ver más</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <a href="#" class="logo">Turron<span>store</span></a>
+                <p>&copy; 2025 Turronstore. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script for Hamburger Menu and Product Carousel -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const sidebar = document.getElementById('sidebar');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                sidebar.classList.add('active');
+            });
+        }
+
+        if (menuClose) {
+            menuClose.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+            });
+        }
+
+        document.addEventListener('click', (e) => {
+            if (sidebar && menuToggle && !sidebar.contains(e.target) && !menuToggle.contains(e.target) && sidebar.classList.contains('active')) {
+                sidebar.classList.remove('active');
+            }
+        });
+
+        // Product Carousel Counter
+        const productGrid = document.querySelector('.product-grid');
+        const counter = document.getElementById('product-counter');
+
+        if (productGrid && counter) {
+            productGrid.addEventListener('scroll', () => {
+                const scrollLeft = productGrid.scrollLeft;
+                const width = productGrid.clientWidth;
+                const index = Math.round(scrollLeft / width);
+                const total = 4;
+                counter.innerText = `${index + 1} / ${total}`;
+            });
+        }
+    </script>
+</body>
+
+</html>
